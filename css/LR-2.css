@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap");
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-img img {
+  max-width: 200px;
+}
+.header__menu {
+  min-width: 1200px;
+}
+
+.header__menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+.header__menu-item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--menu-items-color);
+}
+.main__container {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--main-container-text-color);
+}
+.main__title-text {
+  font-family: "Signika Negative", sans-serif;
+  font-size: 110px;
+  font-weight: 700;
+  color: var(--main-tittle-color);
+}
+.main__content-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--main-content-text);
+}
+.main__empty-container {
+  min-width: 570px;
+}
+.main_block {
+  background-image: url(../img/index-main-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 850px;
+}
+.main__container-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 250px 0 250px 0;
+  margin: 0 120px 0 120px;
+}
+.main__audio {
+  position: fixed;
+  top: 20px;
+  left: 60px;
+  max-height: 10px;
+  /* Властивість 31 */
+}
+
+.services__title {
+  align-items: center;
+  min-height: 200px;
+  position: absolute;
+  transform-origin: center;
+  transform: translate(50%, -50%) rotate(45deg);
+  /* Властивість  20 */
+}
+
+.animation {
+  display: inline;
+  min-height: 200px;
+  border: 1px solid black;
+  animation: borderMove 5s infinite;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(24, 248, 24),
+    rgb(22, 217, 221)
+  );
+  /* Властивість 7  */
+}
+
+@keyframes borderMove {
+  50% {
+    border-radius: 60px;
+  }
+}
+/* Властивість 15 */
+.contacts__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contacts__form::before {
+  content: "CONTACT FORM";
+  color: var(--form-title-color);
+}
+/* Властивість 1 */
+
+.redundant-text::before {
+  content: "Just text";
+  display: flex;
+  flex-direction: column;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 20px;
+  margin: 20px;
+}
+.redundant-text::after {
+  display: block;
+  content: "END PAGE";
+  color: var(--main-content-text);
+}
+/* Властивість 3 */
+
+.contact-title {
+  position: absolute;
+  animation: move 6s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 100px);
+  }
+  100% {
+    left: 0;
+  }
+}
+/* Властивість 12 */
