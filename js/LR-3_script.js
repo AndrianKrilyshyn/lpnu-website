@@ -5,6 +5,7 @@ const btnTask4 = document.getElementById("btn__tk-4");
 
 // Завдання 1,1
 btnTask1.addEventListener("click", function () {
+  location.reload();
   return alert(
     "URL address: " +
       location.href +
