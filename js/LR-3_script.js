@@ -42,4 +42,9 @@ function changeSize() {
 }
 
 const url = "/LR-3_Task4.html";
-btnTask4.addEventListener("click", function(){window.open(url)});
+btnTask4.addEventListener("click", function(){
+    let newWindow = window.open(url); // Відкриваємо нове вікно з іншою сторінкою
+    newWindow.onload = function() {
+        window.location.reload(); // Перезавантажуємо основну сторінку, коли нове вікно завантажено
+    };
+});
