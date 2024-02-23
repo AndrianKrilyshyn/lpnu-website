@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LR-3</title>
-</head>
-<body>
-    <h1>LR-3</h1>
-    <button id="btn__tk-1">Task 1</button>
-    <button id="btn__tk-2">Task 2</button>
-    <button id="btn__tk-3">Task 3</button>
-    <button id="btn__tk-4">Task 4</button>
+  </head>
+  <body>
+    <section
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <h1>LR-3</h1>
+      <table style="max-width: 800px" border="1">
+        <thead>
+          <tr>
+            <th>Кнопка</th>
+            <th>Умова</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <button id="btn__tk-1">Task 1</button>
+            </td>
+            <td>
+              <p>
+                При завантаженні HTML-сторінки з’являється діалогове вікно
+                alert. Напис в діалоговому вікні має містити URL адресу
+                завантаженої сторінки та розміри екрану.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="btn__tk-2">Task 2</button>
+            </td>
+            <td>
+              <p>
+                При завантаженні HTML-сторінки з’являється діалогове вікно
+                prompt, яке запрошує користувача ввести рік народження. Після
+                натиснення “ок”, за допомогою alert вивести на екран
+                повідомлення, якщо вік більше 18, “я дорослий”, у протилежному
+                випадку “я дитина”.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="btn__tk-3">Task 3</button>
+            </td>
+            <td>
+              <p>
+                При завантаженні HTML-сторінки з’являється діалогове вікно
+                confirm, яке виводить “чи бажаєте змінити параметри вікна?».”.
+                Якщо “ок”, то зменшуємо вікно у двічі, по висоті та ширині.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button id="btn__tk-4">Task 4</button>
+            </td>
+            <td>
+              <p>
+                На html-сторінці розміщено дві кнопки. При натисканні на кнопку
+                №1 відкривається нове вікно з заданими параметрами. При
+                натисканні на кнопку №2 нове вікно закривається. В нове вікно
+                має бути завантажено сайт НУ «Львівська політехніка».
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
     <script src="js/LR-3_script.js"></script>
-</body>
+  </body>
 </html>
