@@ -36,15 +36,20 @@ btnTask3.addEventListener("click", function () {
     ? changeSize()
     : alert("Зміни не відбулись");
 });
+
 function changeSize() {
-  window.innerHeight = window.innerHeight / 2;
-  window.innerWidth = window.innerWidth / 2;
+  const newWidth = window.innerWidth / 2;
+  const newHeight = window.innerHeight / 2;
+
+  window.open(location.href, "", "width=" + newWidth + ",height=" + newHeight);
 }
 
+// function changeSize() {
+//   window.innerHeight = window.innerHeight / 2;
+//   window.innerWidth = window.innerWidth / 2;
+// }
+
 const url = "LR-3_Task4.html";
-btnTask4.addEventListener("click", function(){
-    let newWindow = window.open(url); // Відкриваємо нове вікно з іншою сторінкою
-    newWindow.onload = function() {
-        window.location.reload(); // Перезавантажуємо основну сторінку, коли нове вікно завантажено
-    };
+btnTask4.addEventListener("click", function () {
+  window.open(url);
 });
