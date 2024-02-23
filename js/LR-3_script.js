@@ -41,7 +41,7 @@ function changeSize() {
   window.innerWidth = window.innerWidth / 2;
 }
 
-const url = "/LR-3_Task4.html";
+const url = "LR-3_Task4.html";
 btnTask4.addEventListener("click", function(){
     let newWindow = window.open(url); // Відкриваємо нове вікно з іншою сторінкою
     newWindow.onload = function() {
