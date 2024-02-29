@@ -1,15 +1,16 @@
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    --menu-items-color: rgb(90, 55, 51);
-    --main-container-text-color: rgb(235, 109, 47);
-    --main-tittle-color: rgb(90, 55, 51);
-    --main-content-text: rgb(65, 57, 57);
-    --form-title-color: blue;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --menu-items-color: rgb(90, 55, 51);
+  --main-container-text-color: rgb(235, 109, 47);
+  --main-tittle-color: rgb(90, 55, 51);
+  --main-content-text: rgb(65, 57, 57);
+  --form-title-color: blue;
+
+  --btn-back-to-list-color: #cd0a0a;
+  --btn-back-to-list-color-hoover: #740707;
+}

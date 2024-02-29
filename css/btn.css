@@ -1,0 +1,40 @@
+:root {
+  --btn-back-to-list-color: #cd0a0a;
+  --btn-back-to-list-color-hover: #740707;
+  
+  --btn-lr-number-color: #1153f9;
+  --btn-lr-number-color-hover: #0022aa;
+
+  
+}
+.btn-lr-number {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--btn-lr-number-color);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.btn-lr-number:hover {
+  background-color: var(--btn-lr-number-color-hover);
+}
+.btn-back-to-list {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--btn-back-to-list-color);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-back-to-list:hover {
+  background-color: var(--btn-back-to-list-color-hover);
+}

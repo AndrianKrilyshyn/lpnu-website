@@ -3,19 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/LR-4.css" />
+    <link rel="stylesheet" href="css/btn.css">
     <title>LR-4</title>
   </head>
   <body>
-    <p>ax<sup>2</sup> + bx + c = 0</p>
-    <input id="cof" type="text" placeholder="Enter a b c" />
-    <button id="btn" type="submit">Sumbit</button>
-    <p id="resultX1"></p>
-    <p id="resultX2"></p>
-    <input id="array" type="text" placeholder="Enter array" />
-    <button id="btn-array" type="submit">Sumbit</button>
-    <p></p>
-    <input id="moreTen" type="text" placeholder="Enter string" />
-    <button id="btn-more-ten" type="submit">Sumbit</button>
+    <a class="btn-back-to-list" href="index.html">Back to list</a>
+    <div class="wrapper">
+      <p><b>Завдання №1</b></p>
+      <p style="width: 60%">
+        В текстовий рядок вводиться серія чисел(3 числа), що характеризують
+        коефіцієнти квадратного рівняння (ax 2+bx+c=0). Після натиснення кнопки,
+        в два абзаци вивести значення x1 x2. Якщо розв'язку немає, вивести
+        повідомлення у alert.
+      </p>
+      <p><i>(Тестові дані: 4 8 2)</i></p>
+      <p>ax<sup>2</sup> + bx + c = 0</p>
+      <input id="cof" type="text" placeholder="Enter a b c" />
+      <button id="btn" type="submit">Sumbit</button>
+      <p id="resultX1"></p>
+      <p id="resultX2"></p>
+      <p><b>Завдання №2</b></p>
+      <p style="width: 60%">
+        В текстовий рядок вводяться серія значень, розділених комою (значення
+        можуть бути числові та рядкові). При натисканні на кнопку має виконатись
+        функція. Функція перетворює в масив введене в текстовий рядок значення
+        та виводить у повідомленні типу alert середній елемент масиву. Якщо
+        елемент є числом, вивести суму цифр.
+      </p>
+      <p><i>(Тестові дані: 7,2,4,6)</i></p>
+      <input id="array" type="text" placeholder="Enter values" />
+      <button id="btn-array" type="submit">Sumbit</button>
+      <p><b>Завдання №3</b></p>
+      <p style="width: 60%">
+        В текстовий рядок вводяться серія значень (чисел), розділених комою
+        (значення можуть бути числові та рядкові). При натисканні на кнопку має
+        виконатись функція. Функція перетворює в масив введене в текстовий рядок
+        значення та створює новий масив, який сформовано з введених елементів
+        які більші за 10. Вивести новий масив в абзаці. Якщо новий масив містить
+        0 елементів – вивести напис «Таких елементів немає».
+      </p>
+      <p><i>(Тестові дані: 10,11,4,7,15,14)</i></p>
+      <input id="moreTen" type="text" placeholder="Enter values" />
+      <button id="btn-more-ten" type="submit">Sumbit</button>
+      <p><b>Завдання №4</b></p>
+      <p style="width: 60%">
+        В текстовий рядок вводиться послідовність пар чисел. При натисненні
+        кнопки, перевіряється на парність кількість введених чисел та формується
+        багатомірний масив, де перше число це рядок, другий стовпець. Значенням
+        комірки буде номер пари чисел. Записаний багатомірний масив записати у
+        наперед підготовлену таблицю.
+      </p>
+      <p><i>(Тестові дані: 1 4, 0 2, 3 0, 2 4)</i></p>
+      <input id="parisArray" type="text" placeholder="Enter numbers" />
+      <button id="btn-pairs" type="submit">Sumbit</button>
+      <table id="outputTable" border="1"></table>
+      <p><b>Завдання №5</b></p>
+      <p style="width: 60%">
+        В текстовий рядок вводяться серія значень, розділених комою (значення
+        можуть бути числові та рядкові). При натисканні на кнопку має виконатись
+        функція. Функція формує масив з введених даних та викликає
+        getFirst(array, n) та результату виводить у абзац. Написати іншу
+        getFirst, яка повертає перших n символів масиву. Якщо n від'ємне то
+        повертає length-n елементів.
+      </p>
+      <p><i>(Тестові дані: 4, 5, 9, 10, 24) N: 2</i></p>
+      <input id="getArrayElem" type="text" placeholder="Enter numbers" />
+      <input id="getArraySize" type="text" placeholder="Enter N" />
+      <button id="btn-get-array-elem" type="submit">Sumbit</button>
+      <p id="newArray"></p>
+    </div>
     <script src="js/LR-4_script.js"></script>
   </body>
 </html>
