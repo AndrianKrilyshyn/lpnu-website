@@ -123,3 +123,25 @@ function getFirst(array, n){
   return n>0? array.slice(0, n): array.slice(0, array.length-n);
 }
 
+
+//Додаткове завдання
+const btnTask = document.getElementById("btn-task");
+btnTask.addEventListener("click", doTask);
+
+function doTask() {
+  const taskField = document.getElementById("getTask");
+  const inputValue = taskField.value.split(" ");
+  const modifiedValue = inputValue.map(num => {
+    const parsedNum = parseInt(num);
+    if (!isNaN(parsedNum)) {
+      return getNum(parsedNum);
+    } else {
+      return "*";
+    }
+  });
+  taskField.value = modifiedValue.join(" ");
+}
+
+function getNum(num) {
+  return num > 10 ? num * 10 : "*";
+}

@@ -36,3 +36,37 @@ function toHex(){
     const number = parseInt(document.getElementById("toHex").value);
     alert(number+" = "+number.toString(16));
 }
+
+//Додаткове завдання
+const btnTask = document.getElementById("btn-task");
+btnTask.addEventListener("click", doTask);
+
+function doTask() {
+  const taskField = document.getElementById("getTask");
+  const inputValue = taskField.value.split(","); 
+  const modifiedValue = inputValue.map(value => check(value));
+  taskField.value = modifiedValue.join(", "); 
+}
+
+function check(value) {
+    const parsedNum = parseInt(value);
+    if (!isNaN(parsedNum)) {
+        return parsedNum * 10;
+    } else {
+        return modifyString(value);
+    }
+}
+
+
+function modifyString(str) {
+  let modifiedStr = "";
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    if (char === char.toLowerCase()) {
+      modifiedStr += "*";
+    } else {
+      modifiedStr += "?";
+    }
+  }
+  return modifiedStr;
+}

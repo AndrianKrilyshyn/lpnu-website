@@ -22,3 +22,12 @@ function changeToR2D2() {
 function getPath(){
     alert("Шлях до файлу малюнка: "+img.src);
 }
+
+//Додаткове завдання
+// document.addEventListener("mousemove", function(event) {
+//     const mouseX = event.clientX; 
+//     const mouseY = event.clientY; 
+    
+//     img.style.left = mouseX  + "px";
+//     img.style.top = mouseY + img.height + "px";
+// });
